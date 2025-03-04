@@ -23,19 +23,24 @@ int main() {
         if (A[i] == 0) {
             zeroCount++;
         }
+
+        cout<<" Num element 0"<<zeroCount<<endl;
+        if(A!=nullptr) delete [] A;
+
+        main1();
     }
 
 
 
 #include <iostream>
-#include <limits>
+//#include <limits>
     using namespace std;
 
-    int main() {
+    int main1() {
         int N, T;
         cout << "Enter the size of the array: ";
         cin >> N;
-
+// ???
         int* A = new int[N];  // Dynamic memory allocation for the array
 
         cout << "Enter " << N << " elements: ";
